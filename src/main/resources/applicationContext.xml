@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <!--注册bean对象-->
+    <!--<bean id="someService" class="spring.service.SomeServiceImpl"/>-->
+
+    <bean id="MyDate" class="java.util.Date"/>
+
+    <!--set注入-->
+    <!--<bean id="MyStudent" class="spring.domain.Student">
+        <property name="name" value="张三"/>
+        <property name="age" value="18"/>
+    </bean>-->
+
+    <!--<bean id="MyStudent" class="spring.domain.Student">
+        <property name="name" value="张三"/>
+        <property name="age" value="18"/>
+        <property name="school" ref="MySchool"/>
+    </bean>-->
+
+    <bean id="MySchool" class="spring.domain.School">
+        <property name="name" value="闽南师范大学"/>
+        <property name="address" value="漳州芗城区"/>
+    </bean>
+
+    <!--构造注入-->
+    <bean id="MyStudent" class="spring.domain.Student">
+        <constructor-arg name="name" value="张三"/>
+        <constructor-arg name="age" value="18"/>
+        <constructor-arg name="school" ref="MySchool"/>
+    </bean>
+
+</beans>
