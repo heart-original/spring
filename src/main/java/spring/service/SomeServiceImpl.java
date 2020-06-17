@@ -1,5 +1,7 @@
 package spring.service;
 
+import spring.utils.ServiceUtil;
+
 public class SomeServiceImpl implements SomeService {
     public SomeServiceImpl() {
         super();
@@ -33,6 +35,15 @@ public class SomeServiceImpl implements SomeService {
 
     @Override
     public void doSome() {
-        System.out.println("---业务方法doSome（）---");
+       /* ServiceUtil.doLog();*/
+        System.out.println("---执行业务方法doSome（）---");
+        /*ServiceUtil.doTrans();*/
+    }
+
+    @Override
+    public void doOther() {
+       /* ServiceUtil.doLog();*/
+        System.out.println("---执行业务方法doOther()---");
+        /*ServiceUtil.doTrans();*/
     }
 }
