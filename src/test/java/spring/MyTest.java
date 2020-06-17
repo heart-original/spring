@@ -36,14 +36,7 @@ public class MyTest
         String resource="applicationContext.xml";
         ApplicationContext applicationContext=new ClassPathXmlApplicationContext(resource);
         Student student=(Student) applicationContext.getBean("MyStudent");
-        System.out.println("name:"+student.getName()+"-----"+"age:"+student.getAge());
-    }
-
-    @Test
-    public void test03(){
-        String resource="applicationContext.xml";
-        ApplicationContext applicationContext=new ClassPathXmlApplicationContext(resource);
-        Student student=(Student) applicationContext.getBean("MyStudent");
         System.out.println("student:"+student);
     }
+
 }
