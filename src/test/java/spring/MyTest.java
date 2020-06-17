@@ -71,4 +71,27 @@ public class MyTest
         proxy.doOther();
     }
 
+    @Test
+    public void test05(){
+        String config="applicationContext.xml";
+        ApplicationContext context=new ClassPathXmlApplicationContext(config);
+        SomeService proxy = (SomeService) context.getBean("someService");
+        proxy.doSome();
+    }
+
+    @Test
+    public void test06(){
+        String config="applicationContext.xml";
+        ApplicationContext context=new ClassPathXmlApplicationContext(config);
+        SomeService proxy = (SomeService) context.getBean("someService");
+        proxy.doAfter("王五",20);
+    }
+
+    @Test
+    public void test07(){
+        String config="applicationContext.xml";
+        ApplicationContext context=new ClassPathXmlApplicationContext(config);
+        SomeService proxy = (SomeService) context.getBean("someService");
+        proxy.doAround("萧炎",20);
+    }
 }

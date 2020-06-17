@@ -46,4 +46,16 @@ public class SomeServiceImpl implements SomeService {
         System.out.println("---执行业务方法doOther()---");
         /*ServiceUtil.doTrans();*/
     }
+
+    @Override
+    public String doAfter(String name, int age) {
+        System.out.println("====执行了业务方法doAfter()====");
+        return "after";
+    }
+
+    @Override
+    public String doAround(String name, int age) {
+        System.out.println("====执行了业务方法doAround()====");
+        return "around";
+    }
 }
