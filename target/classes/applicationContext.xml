@@ -36,13 +36,46 @@
     </bean>
 -->
 
-    <!--使用注解方式-->
+    <!--&lt;!&ndash;使用注解方式&ndash;&gt;
     <context:component-scan base-package="spring"/>
 
     <bean id="someService" class="spring.service.SomeServiceImpl"/>
 
     <bean id="myAspect" class="spring.aspect.MyAspect"/>
 
-    <aop:aspectj-autoproxy/>
+    <aop:aspectj-autoproxy/>-->
 
+    <context:property-placeholder location="classpath:jdbc.properties" />
+
+    <!--配置druid连接池-->
+    <bean id="myDataSource" class="com.alibaba.druid.pool.DruidDataSource"
+          init-method="init" destroy-method="close">
+        <!--set注入给DruidDataSource提供连接数据库信息 -->
+        <!--    使用属性配置文件中的数据，语法 ${key} -->
+        <property name="url" value="${jdbc.url}" /><!--setUrl()-->
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}" />
+        <property name="maxActive" value="${jdbc.max}" />
+    </bean>
+
+    <!--注册sqlsessionFactory的bean-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="myDataSource"/>
+        <property name="configLocation" value="classpath:mybatis.xml"/>
+    </bean>
+
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--指定SqlSessionFactory对象的id-->
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
+        <!--指定包名， 包名是dao接口所在的包名。
+            MapperScannerConfigurer会扫描这个包中的所有接口，把每个接口都执行
+            一次getMapper()方法，得到每个接口的dao对象。
+            创建好的dao对象放入到spring的容器中的。 dao对象的默认名称是 接口名首字母小写
+        -->
+        <property name="basePackage" value="spring.dao"/>
+    </bean>
+
+    <bean id="studentService" class="spring.service.StudentServiceImpl">
+        <property name="studentDao" ref="studentDao"/>
+    </bean>
 </beans>
