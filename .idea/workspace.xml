@@ -2,21 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57822115-b94d-4873-9dac-fdb8bf426e5a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/dao/StudentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/dao/StudentDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/service/StudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/service/StudentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/dao/GoodsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/dao/GoodsDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/dao/SaleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/dao/SaleDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/domain/Goods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/domain/Sale.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/exception/NotEnoughException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/service/BuyGoodsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/service/BuyGoodsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/domain/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/domain/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/spring/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/spring/MyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/domain/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/domain/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/spring/MyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/spring/MyTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,80 +27,56 @@
     <session id="-1324069286">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.127" value="1" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.71" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.75" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="6" />
-          <entry key="java" value="2662" />
+          <entry key="java" value="3238" />
           <entry key="properties" value="16" />
           <entry key="txt" value="5" />
-          <entry key="xml" value="921" />
+          <entry key="xml" value="1216" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2662" />
+          <entry key="JAVA" value="3238" />
           <entry key="PLAIN_TEXT" value="11" />
           <entry key="Properties" value="16" />
-          <entry key="XML" value="921" />
+          <entry key="SQL" value="1" />
+          <entry key="XML" value="1215" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="30" />
+          <entry key="java" value="44" />
           <entry key="properties" value="3" />
-          <entry key="xml" value="14" />
+          <entry key="xml" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="30" />
+          <entry key="JAVA" value="44" />
           <entry key="Properties" value="3" />
-          <entry key="XML" value="14" />
+          <entry key="XML" value="22" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/spring/MyTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
-              <caret line="130" column="34" selection-start-line="130" selection-start-column="34" selection-end-line="130" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/spring/service/StudentServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#244#245#0" expanded="true" />
-                <element signature="e#277#278#0" expanded="true" />
-                <element signature="e#333#334#0" expanded="true" />
-                <element signature="e#377#378#0" expanded="true" />
-                <element signature="e#948#949#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/spring/dao/StudentDao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+              <caret line="149" column="24" selection-start-line="149" selection-start-column="24" selection-end-line="149" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -136,11 +109,20 @@
         <option value="$PROJECT_DIR$/src/main/resources/mybatis.xml" />
         <option value="$PROJECT_DIR$/src/main/java/spring/service/StudentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/spring/service/StudentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/java/spring/domain/Student.java" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/spring/MyTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/spring/dao/StudentDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/domain/Sale.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/domain/Goods.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/dao/SaleDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/dao/GoodsDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/dao/SaleDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/dao/GoodsDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/service/BuyGoodsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/exception/NotEnoughException.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/service/BuyGoodsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/spring/MyTest.java" />
       </list>
     </option>
   </component>
@@ -172,6 +154,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,7 +195,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring" type="b2602c69:ProjectViewProjectNode" />
@@ -246,17 +229,21 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592469665908" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592490301532" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="spring.service" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -270,39 +257,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyTest.test10">
-    <configuration name="MyTest.test06" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="spring.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="spring" />
-      <option name="MAIN_CLASS_NAME" value="spring.MyTest" />
-      <option name="METHOD_NAME" value="test06" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyTest.test07" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="spring.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="spring" />
-      <option name="MAIN_CLASS_NAME" value="spring.MyTest" />
-      <option name="METHOD_NAME" value="test07" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MyTest.test12">
     <configuration name="MyTest.test08" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring" />
       <extension name="coverage">
@@ -351,20 +306,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyTest.test11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="spring" />
+      <option name="MAIN_CLASS_NAME" value="spring.MyTest" />
+      <option name="METHOD_NAME" value="test11" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest.test12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="spring" />
+      <option name="MAIN_CLASS_NAME" value="spring.MyTest" />
+      <option name="METHOD_NAME" value="test12" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.MyTest.test06" />
-      <item itemvalue="JUnit.MyTest.test07" />
       <item itemvalue="JUnit.MyTest.test08" />
       <item itemvalue="JUnit.MyTest.test09" />
       <item itemvalue="JUnit.MyTest.test10" />
+      <item itemvalue="JUnit.MyTest.test11" />
+      <item itemvalue="JUnit.MyTest.test12" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyTest.test12" />
+        <item itemvalue="JUnit.MyTest.test11" />
         <item itemvalue="JUnit.MyTest.test10" />
         <item itemvalue="JUnit.MyTest.test09" />
         <item itemvalue="JUnit.MyTest.test08" />
-        <item itemvalue="JUnit.MyTest.test07" />
-        <item itemvalue="JUnit.MyTest.test06" />
       </list>
     </recent_temporary>
   </component>
@@ -381,50 +368,51 @@
       <workItem from="1592312472265" duration="4213000" />
       <workItem from="1592373988905" duration="37000" />
       <workItem from="1592394233216" duration="10053000" />
-      <workItem from="1592462774743" duration="6836000" />
+      <workItem from="1592462774743" duration="7038000" />
+      <workItem from="1592486529334" duration="3740000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyTest_test09 - 2020.06.18 at 16h 21m 44s.xml">
-      <configuration name="MyTest.test09" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTest_test09 - 2020.06.18 at 16h 22m 16s.xml">
-      <configuration name="MyTest.test09" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTest_test09 - 2020.06.18 at 16h 22m 45s.xml">
-      <configuration name="MyTest.test09" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTest_test09 - 2020.06.18 at 16h 24m 22s.xml">
-      <configuration name="MyTest.test09" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTest_test09 - 2020.06.18 at 16h 26m 04s.xml">
-      <configuration name="MyTest.test09" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTest_test09 - 2020.06.18 at 16h 26m 18s.xml">
-      <configuration name="MyTest.test09" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTest_test09 - 2020.06.18 at 16h 28m 19s.xml">
-      <configuration name="MyTest.test09" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTest_test09 - 2020.06.18 at 16h 37m 07s.xml">
-      <configuration name="MyTest.test09" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MyTest_test09 - 2020.06.18 at 16h 38m 15s.xml">
       <configuration name="MyTest.test09" configurationId="JUnit" />
     </history-entry>
     <history-entry file="MyTest_test10 - 2020.06.18 at 16h 39m 59s.xml">
       <configuration name="MyTest.test10" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MyTest_test10 - 2020.06.18 at 16h 41m 09s.xml">
+      <configuration name="MyTest.test10" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_test11 - 2020.06.18 at 22h 04m 06s.xml">
+      <configuration name="MyTest.test11" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_test12 - 2020.06.18 at 22h 05m 58s.xml">
+      <configuration name="MyTest.test12" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_test12 - 2020.06.18 at 22h 10m 18s.xml">
+      <configuration name="MyTest.test12" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_test12 - 2020.06.18 at 22h 10m 40s.xml">
+      <configuration name="MyTest.test12" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_test12 - 2020.06.18 at 22h 18m 39s.xml">
+      <configuration name="MyTest.test12" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_test12 - 2020.06.18 at 22h 19m 15s.xml">
+      <configuration name="MyTest.test12" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_test12 - 2020.06.18 at 22h 19m 34s.xml">
+      <configuration name="MyTest.test12" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21139000" />
+    <option name="totallyTimeSpent" value="25081000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -433,7 +421,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32935154" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32935154" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -529,9 +517,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -572,18 +558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="56" column="56" selection-start-line="56" selection-start-column="56" selection-end-line="56" selection-end-column="56" />
-          <folding>
-            <element signature="e#2253#2266#0" expanded="true" />
-            <element signature="e#2325#2343#0" expanded="true" />
-            <element signature="e#2447#2460#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="740">
@@ -613,17 +587,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/dao/StudentDao.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/domain/Sale.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/dao/StudentDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="25" column="9" lean-forward="true" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/dao/GoodsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/domain/Goods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding>
+            <element signature="e#200#201#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/dao/SaleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/exception/NotEnoughException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+          <folding>
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/service/BuyGoodsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/dao/GoodsDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/dao/SaleDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="89" column="65" selection-start-line="89" selection-start-column="65" selection-end-line="89" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/service/BuyGoodsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/spring/MyTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="130" column="34" selection-start-line="130" selection-start-column="34" selection-end-line="130" selection-end-column="34" />
+          <caret line="149" column="24" selection-start-line="149" selection-start-column="24" selection-end-line="149" selection-end-column="24" />
         </state>
       </provider>
     </entry>

@@ -8,6 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import spring.dao.StudentDao;
 import spring.domain.Student;
 import spring.handler.MyInvocationHandler;
+import spring.service.BuyGoodsService;
 import spring.service.SomeService;
 import spring.service.SomeServiceImpl;
 import spring.service.StudentService;
@@ -98,7 +99,7 @@ public class MyTest
         proxy.doAround("萧炎",20);
     }
 
-    @Test
+   /* @Test
     public void test08(){
         String resource="applicationContext.xml";
         ApplicationContext applicationContext=new ClassPathXmlApplicationContext(resource);
@@ -106,7 +107,7 @@ public class MyTest
         for(String na:names){
             System.out.println("容器中对象名称："+na+"|"+applicationContext.getBean(na));
         }
-    }
+    }*/
 
     @Test
     public void test09(){
@@ -132,4 +133,20 @@ public class MyTest
         }
     }
 
+    @Test
+    public void test11(){
+        String resource="applicationContext.xml";
+        ApplicationContext applicationContext=new ClassPathXmlApplicationContext(resource);
+        BuyGoodsService service = (BuyGoodsService) applicationContext.getBean("bugService");
+        service.buy(1001,10);
+    }
+
+    @Test
+    public void test12(){
+        String resource="applicationContext.xml";
+        ApplicationContext applicationContext=new ClassPathXmlApplicationContext(resource);
+        BuyGoodsService service = (BuyGoodsService) applicationContext.getBean("bugService");
+        System.out.println("service是代理：" + service.getClass().getName());
+        service.buy(1001,10);
+    }
 }
